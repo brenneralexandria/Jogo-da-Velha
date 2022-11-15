@@ -62,7 +62,7 @@ function FinishGame(Winner = null) {
     const ResultMessage = document.getElementById("ResultMessage");
     const h2 = document.createElement("h2");
     const h3 = document.createElement("h3");
-    let Mensage = null;
+    let Message = null;
 
     ResultMessage.style.display = "block";
     ResultMessage.appendChild(h2);
@@ -72,5 +72,6 @@ function FinishGame(Winner = null) {
         h2.innerHTML = `The player <span>${Winner}</span> won`;
     } else {
         h2.innerHTML = "The game ended in a draw";
-    }
+        }
 }
+
