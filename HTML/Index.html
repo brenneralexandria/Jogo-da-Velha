@@ -1,34 +1,64 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
+
 <head>
+    <title>
+        Jogo da velha
+    </title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../CSS/style.css" />
-    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-    <body>
-        <div class="container"> 
-           
-            <h1>Jogo da Velha</h1>
-            <div class="board">
-                <div class="cell" id="0"></div>
-                <div class="cell" id="1"></div>
-                <div class="cell" id="2"></div>
-                <div class="cell" id="3"></div>
-                <div class="cell" id="4"></div>
-                <div class="cell" id="5"></div>
-                <div class="cell" id="6"></div>
-                <div class="cell" id="7"></div>
-                <div class="cell" id="8"></div>
-            </div>
-        
-        </div>  
-            <div class="ResultMessage" id-result-message>
-                <p class="TextMessage">X foi o Vencedor!</p>
-            <button>Reiniciar</button>
-        </div>
-        <script src="../JS/Tabuleiro.js"></script>
-        <script src="../JS/Jogadores.js"></script> 
-    </body>
+
+<body>
+
+<h1>
+    Jogo da Velha
+</h1>
+
+<div>
+    <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+
+<div>
+    <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+
+<div>
+    <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+</div>
+
+<div class="jogador">
+    <label>
+        Jogador:
+    </label>
+    <label id="jogador-selecionado">
+
+    </label>
+</div>
+
+<div class="vencedor">
+    <label>
+        Vencedor:
+    </label>
+    <label id="vencedor-selecionado">
+
+    </label>
+</div>
+
+<div>
+    <button onclick="reiniciar()">
+        Reiniciar
+    </button>
+</div>
+
+</body>
+
+<script src="../JS/Tabuleiro.js"></script>
+
 </html>
